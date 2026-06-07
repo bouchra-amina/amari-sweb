@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Médecin | Dr Amari</title>
+
+    <link rel="stylesheet" href="dashmed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logocard.jpg">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2>Dr Amari - Espace Médecin</h2>
+        <a href="login.html" class="logout">Déconnexion</a>
+    </div>
+</header>
+
+<div class="container">
+
+    <h1 class="title">Demandes des patients</h1>
+
+    <!-- LISTE DES QUESTIONS -->
+    <div id="questionsContainer"></div>
+
+</div>
+
+<!-- MODAL REPONSE -->
+<div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <h2>Répondre au patient</h2>
+
+        <p id="questionText"></p>
+
+        <textarea id="responseText" rows="5" placeholder="Écrire la réponse du médecin..."></textarea>
+
+        <button onclick="sendResponse()">Envoyer la réponse</button>
+        <button class="close" onclick="closeModal()">Fermer</button>
+
+    </div>
+
+</div>
+
+<script src="doctor-dashboard.js"></script>
+
+</body>
+</html>

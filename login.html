@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription | Cabinet Dr Amari</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logocard.jpg">
+</head>
+<body>
+
+<div class="page">
+
+    <!-- PANNEAU GAUCHE -->
+    <div class="left-panel">
+
+        <h1>Bienvenue au Cabinet du Dr Amari</h1>
+
+        <p>
+            Veuillez renseigner vos informations personnelles et médicales afin de créer votre espace patient sécurisé.
+            Ces informations permettront au Dr Amari de mieux comprendre votre situation et de vous orienter de manière adaptée.
+        </p>
+
+        <div class="info-box">
+            ✔ Suivi cardiologique personnalisé<br>
+            ✔ Réponse du médecin après analyse<br>
+            ✔ Espace sécurisé pour vos données<br>
+            ✔ Confidentialité des informations médicales
+        </div>
+
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div class="card">
+
+        <h2>Créer votre espace patient</h2>
+
+        <form id="registerForm">
+
+            <label>Nom complet - الاسم الكامل</label>
+            <input type="text" placeholder="Entrez votre nom complet" required>
+
+
+            <label>Âge - العمر</label>
+            <input type="number" min="1" max="120" placeholder="Votre âge" required>
+
+            <label>Sexe - الجنس</label>
+            <select required>
+                <option value="">Choisir - اختر</option>
+                <option>Homme - ذكر</option>
+                <option>Femme - أنثى</option>
+            </select>
+
+            <label>Wilaya - الولاية</label>
+            <input type="text" placeholder="Ex : Alger, Oran, Annaba..." required>
+
+            <label>Profession - المهنة</label>
+            <input type="text" placeholder="Votre profession" required>
+
+            <label>Autres maladies ou antécédents médicaux - أمراض أخرى أو سوابق مرضية</label>
+            <textarea rows="4" placeholder="Ex : Diabète, Hypertension, Asthme..."></textarea>
+
+            <button type="submit">
+                Créer mon espace - إنشاء حسابي
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <div class="privacy-note">
+            Vos informations sont utilisées uniquement dans le cadre du suivi médical et restent strictement confidentielles.
+        </div>
+
+    </div>
+
+</div>
+
+<script src="register.js"></script>
+
+</body>
+</html>

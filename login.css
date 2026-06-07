@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8fbff;
+    height:100vh;
+}
+
+/* PAGE FLEX */
+.page{
+    display:flex;
+    min-height:100vh;
+}
+
+/* LEFT PANEL */
+.left-panel{
+    flex:0.6;
+    background:linear-gradient(135deg,#0F4C81,#1e6fb7);
+    color:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left-panel h1{
+    font-size:31px;
+    margin-bottom:20px;
+}
+
+.left-panel p{
+    font-size:15px;
+    line-height:1.6;
+    opacity:0.95;
+    margin-bottom:25px;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius:12px;
+    font-size:14px;
+    line-height:1.8;
+}
+
+/* RIGHT CARD */
+.card{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+}
+
+.card h2{
+    color:#0F4C81;
+    margin-bottom:20px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:12px;
+    font-size:14px;
+    font-weight:500;
+}
+
+input, select{
+    padding:12px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    margin-top:5px;
+    outline:none;
+    background:#fff;
+}
+
+input:focus, select:focus{
+    border-color:#0F4C81;
+    box-shadow:0 0 0 3px rgba(15,76,129,0.1);
+}
+
+/* BUTTON */
+button{
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#0F4C81;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0b3a63;
+    transform:translateY(-2px);
+}
+
+/* MESSAGE */
+#message{
+    margin-top:15px;
+    color:#0F4C81;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .page{
+        flex-direction:column;
+    }
+
+    .left-panel{
+        padding:40px;
+        text-align:center;
+    }
+
+    .card{
+        padding:40px;
+    }
+}
+textarea{
+    padding:12px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    margin-top:5px;
+    outline:none;
+    resize:vertical;
+    font-family:'Poppins',sans-serif;
+    min-height:100px;
+}
+
+.privacy-note{
+    margin-top:15px;
+    color:#64748b;
+    font-size:13px;
+    text-align:center;
+}
